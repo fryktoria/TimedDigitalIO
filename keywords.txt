@@ -1,0 +1,56 @@
+###########################################
+# Syntax Coloring Map for TimedDigitalIO
+###########################################
+
+###########################################
+# Datatypes e.g. Classes (KEYWORD1)
+###########################################
+
+TimedDigitalInput	KEYWORD1
+TimedDigitalOutput	KEYWORD1
+InputSensorArray	KEYWORD1
+OutputSensorArray	KEYWORD1
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+
+printStateChangeInfo	KEYWORD2
+setState	KEYWORD2 
+toggleStateOn	KEYWORD2
+toggleStateOff	KEYWORD2    
+recordUpToNow	KEYWORD2
+storeEEPROM	KEYWORD2
+readEEPROM	KEYWORD2
+pinValid	KEYWORD2
+begin	KEYWORD2
+readSensor	KEYWORD2
+setEEPROMRecordingInterval	KEYWORD2
+printSensorData	KEYWORD2
+printMonthlyActivity	KEYWORD2
+setPin	KEYWORD2
+setOn	KEYWORD2
+setOff	KEYWORD2
+checkTimer	KEYWORD2
+printHumanTime	KEYWORD2
+print2Digits	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+###########################################
+# Constants (LITERAL1)
+###########################################
+
+TDIO_DEBUG	LITERAL1
+TDI_MAX_SENSORS	LITERAL1
+TDO_MAX_SENSORS	LITERAL1
+TDIO_LOGIC_POSITIVE	LITERAL1
+TDIO_LOGIC_NEGATIVE	LITERAL1
+TDIO_STATE_ON	LITERAL1
+TDIO_STATE_OFF	LITERAL1
+EEPROM_OFFSET	LITERAL1
+EEPROM_DEFAULT_RECORDING_INTERVAL	LITERAL1
+EEPROM_MINIMUM_RECORDING_INTERVAL	LITERAL1
+MAX_SENSOR_NAME	LITERAL1
