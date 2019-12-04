@@ -28,16 +28,16 @@ Maintained information contains:
 ## Digital Outputs
 The state of Digital Outputs can be set using the `setOn()` and `setOff()` functions.
 
-The setOn(timer) function will set the output immediately to On and will set it to Off after timer milliseconds. The library does not use interrupts, therefore the user application must incorporate the `checkTimer()` method in the loop().
+The `setOn(timer)` function will set the output immediately to On and will set it to Off after timer milliseconds. The library does not use interrupts, therefore the user application must incorporate the `checkTimer()` method in the loop().
 
 Although time recording could be done for digital outputs in the exact same sense as with digital inputs, I do not consider it useful because the devices may be controlled additionally by manual methods, such as local power switches wired in parallel to the control relays. Our aim is to measure _the time that a device was really active_ and not only _the time we have set it active via the controller_.  Such devices should be monitored via a Digital Input instead. The drawback of course is that we need two pins per device.  
 
 ## Notes
 1. I tried to implement the Arduino guidelines for creating libraries.
-2. Code has tons of comments, sometimes redundant. Old-timers like me have weak memory...
+2. Code has tons of comments, sometimes redundant. Tried to explain things without having to read from start to end.
 3. Code is written with the aim to help the reader (which could be myself, in a few hours from now) to follow exactly what is happening and not to shrink to a smaller tally of lines.
 4. Have tried to avoid String (with capital S) objects and to keep RAM usage as short as possible.
 5. The examples present most of the library functionality. If additional details must be explained, give me a call. 
 6. The semantics of time, duration, interval and their usage in naming variables are a bit relaxed. I hope that the variable naming conveys both the every-day usage and the formal definition, in order to be easily understood.
-7. I am a physicist, electronics and telecommunications engineer. I have written millions of lines of code in Fortran IV, Pascal, COBOL, C, PHP, Javascript etc. in order to produce a specific result for specific projects but I do not consider myself as a programmer. I consider software to be just _a tool_, along with many others we use in engineering. So, please be gentle in criticizing my programming style and my use of the Arduino language, especially with classes of this C++ variant. Suggestions are welcome.
+7. I am a Physicist, Electronics and Telecommunications engineer. I have written millions of lines of code in C, PHP, Javascript, Fortran IV, Pascal, COBOL, Assembly etc. in order to build things but I do not consider myself a "programmer". I consider software to be just _a tool_, along with many others we use in Engineering. So, please be gentle in criticizing my programming style. Suggestions are welcome.
     
