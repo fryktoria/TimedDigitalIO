@@ -33,7 +33,7 @@ The `setOn(timer)` function will set the output immediately to On and will set i
 Although time recording could be done for digital outputs in the exact same sense as with digital inputs, I do not consider it useful because the devices may be controlled additionally by manual methods, such as local power switches wired in parallel to the control relays. Our aim is to measure _the time that a device was really active_ and not only _the time we have set it active via the controller_.  Such devices should be monitored via a Digital Input instead. The drawback of course is that we need two pins per device.  
 
 ## Notes
-1. I tried to implement the Arduino guidelines for creating libraries.
+1. I tried to implement the Arduino guidelines for creating libraries. This is my first attempt to create a library. It is tested only with Arduino Uno and Nano.
 2. Code has tons of comments, sometimes redundant. Tried to explain things without having to read from start to end.
 3. Code is written with the aim to help the reader (which could be myself, in a few hours from now) to follow exactly what is happening and not to shrink to a smaller tally of lines.
 4. Have tried to avoid String (with capital S) objects and to keep RAM usage as short as possible.
